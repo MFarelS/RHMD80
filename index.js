@@ -107,7 +107,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝗛𝗮𝗹𝗹𝗼 @${num.split('@')[0]}\𝗦𝗲𝗹𝗮𝗺𝗮𝘁 𝗱𝗮𝘁𝗮𝗻𝗴 𝗱𝗶 𝗴𝗿𝗼𝘂𝗽 𝗸𝗮𝗺𝗶*${mdata.subject}* 𝗝𝗮𝗻𝗴𝗮𝗻 𝗹𝘂𝗽𝗮 𝗶𝗻𝘁𝗿𝗼 𝘆𝗮 𝘀𝗮𝘆𝗮𝗻𝗴😘`
+				teks = `𝗛𝗮𝗹𝗹𝗼 @${num.split('@')[0]}\𝗦𝗲𝗹𝗮𝗺𝗮𝘁 𝗱𝗮𝘁𝗮𝗻𝗴 𝗱𝗶 𝗴𝗿𝗼𝘂𝗽 𝗸𝗮𝗺𝗶 *${mdata.subject}* 𝗝𝗮𝗻𝗴𝗮𝗻 𝗹𝘂𝗽𝗮 𝗶𝗻𝘁𝗿𝗼 𝘆𝗮 𝘀𝗮𝘆𝗮𝗻𝗴😘`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -600,7 +600,7 @@ client.on('group-participants-update', async (anu) => {
             case 'owner':
             case 'creator':
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-       client.sendMessage(from, '𝗧𝘂𝗵 𝗱𝗮𝗵 𝗮𝗸𝘂 𝗸𝗮𝘀𝗶𝗵 𝗻𝗼𝗺𝗲𝗿 𝗖𝗢 👾𝗔𝗥𝟭𝟱𝗕𝗢𝗧👾,𝗝𝗔𝗡𝗚𝗔𝗡 𝗟𝗨𝗣𝗔 𝗗𝗜 𝗦𝗔𝗩𝗘 𝗘𝗔 ><',MessageType.text, { quoted: mek} )
+       client.sendMessage(from, '𝗧𝘂𝗵 𝗼𝘄𝗻𝗲𝗿 𝗻𝘆𝗮, 𝗰𝗵𝗮𝘁 𝗮𝗷𝗮 𝗽𝗮𝘀𝘁𝗶 𝗱𝗶𝗿𝗲𝘀𝗽𝗼𝗻. 𝗗𝗶 𝘀𝗮𝘃𝗲 𝘆𝗮 𝘀𝗮𝘆𝗮𝗻𝗴 ><',MessageType.text, { quoted: mek} )
            break    
            case 'demote':
 					if (!isGroup) return reply(mess.only.group)
